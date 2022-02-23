@@ -1,3 +1,3 @@
 module.exports = {
-    mongoUrl:"mongodb://localhost:27017"
+    mongoUrl:"process.end.MONGO_URL"
 }
