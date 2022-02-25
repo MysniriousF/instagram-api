@@ -17,7 +17,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 const auth = (req, res, next) => {
-  const token = req.headers["Authorization"];
+  const token = req.headers["authorization"];
   try {
     const user = jwt.verify(token);
     req.userId = user.id;
